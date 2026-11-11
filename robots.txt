@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /account/
+Disallow: /admin/
+Disallow: /pros/dashboard/
+Sitemap: https://www.streetbundle.com/sitemap.xml

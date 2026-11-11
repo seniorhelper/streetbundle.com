@@ -1,0 +1,32 @@
+# StreetBundle
+
+> Neighbors pool the same home service in a ZIP code ("a bundle"). When a bundle reaches its home count, bidding opens automatically and verified local pros bid a per-home price for the whole route. The best qualified bid wins, homes approve with a card hold, the crew works the street, then payment captures and homes rate the pro.
+
+Headquartered in Denver, Colorado. Bundles form anywhere in the US. Phone: 1-800-481-8638.
+
+## Key pages
+- [Home](https://www.streetbundle.com/): Pool the same home service with your neighbors. When your bundle fills, local pros bid for the whole street and everyone pays less.
+- [How it works](https://www.streetbundle.com/how-it-works/): Start or join a bundle, watch it fill, let bidding open on its own, approve the winning price and pay only after the work is done.
+- [Bundles](https://www.streetbundle.com/bundles/): Browse open bundles by ZIP and service. Join free, watch bidding open on its own, and pay less as a street.
+- [Start a bundle](https://www.streetbundle.com/start/): Pick a service, set your ZIP and home count, and share the link. Bidding opens automatically when your bundle fills.
+- [For pros](https://www.streetbundle.com/pros/): Bid on pre-filled routes in your service area. No lead fees, less drive time, pay a small fee only on bundles you win.
+- [Apply as a pro](https://www.streetbundle.com/pros/join/): Tell us your services, service ZIPs and license. Once verified you can bid on bundles in your area.
+- [Savings calculator](https://www.streetbundle.com/savings/): Estimate what your street saves buying a home service together, and how much drive time a bundle saves a crew.
+- [Bundle Forecast](https://www.streetbundle.com/forecast/): Neighbors anonymously log the age of water heaters, roofs and HVAC by ZIP so streets can bundle up before things fail.
+- [For AI agents](https://www.streetbundle.com/agents/): A public, machine-readable feed of open bundles, plus a consent-first join request so AI assistants can help people buy together.
+- [Pricing](https://www.streetbundle.com/pricing/): Homeowners pay nothing to join. Pros pay 8% only on bundles they win and complete. No lead fees or subscriptions.
+- [Trust & safety](https://www.streetbundle.com/trust/): Verified pros, card holds instead of charges, privacy by default and ratings from every bundle.
+- [Why we built it](https://www.streetbundle.com/why/): Sellers have algorithms. Neighbors have each other. The research behind group buying for home services.
+- [FAQ](https://www.streetbundle.com/faq/): Answers about joining bundles, card holds, privacy, bidding rules, pro fees and AI assistants.
+- [About](https://www.streetbundle.com/about/): StreetBundle is headquartered in Denver and built by people who have run home service sales teams from the inside.
+- [Contact](https://www.streetbundle.com/contact/): Call 1-800-481-8638 or send a message. We reply within one business day.
+- [Privacy](https://www.streetbundle.com/privacy/): StreetBundle privacy policy.
+- [Terms](https://www.streetbundle.com/terms/): StreetBundle terms of use.
+- [Pro terms](https://www.streetbundle.com/pro-terms/): StreetBundle pro terms.
+
+## For AI agents (Bundle Protocol 1.0)
+- Read open bundles (no key): GET /functions/v1/agent-api/bundles?zip=&category=&status=open
+- Services: GET /functions/v1/agent-api/categories
+- Request a join for a person (key required, person must approve): POST /functions/v1/agent-api/join-request {"herd_id": "..."}
+- Static snapshot: https://www.streetbundle.com/api/bundles.json
+- Rules: show the person the service, ZIP, home count and best price first; never approve requests or prices on their behalf.
